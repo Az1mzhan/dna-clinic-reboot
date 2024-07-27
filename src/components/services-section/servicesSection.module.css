@@ -1,0 +1,9 @@
+.sectionContainer {
+    width: 100%;
+    min-height: 1699px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F9F8F8;
+}
