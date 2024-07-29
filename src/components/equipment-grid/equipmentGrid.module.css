@@ -4,15 +4,44 @@
     align-items: center;
 }
 
+.title {
+    margin-top: 90px;
+    margin-bottom: 60px;
+    color: #0139B6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    line-height: 59px;
+}
+
 .equipmentCard p {
     margin: 0;
+    font-weight: bold;
 }
 
 .cardsContainer {
     display: flex;
     gap: 13.5px;
+    margin-bottom: 50px;
 }
 
 .equipmentCard {
-    padding-inline: 12.5px;
+    box-shadow: none;
+    padding: 13px;
+    border-radius: 13px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.equipmentCard li {
+    margin: 10px 0;
+}
+
+.equipmentCard img {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.makeAppointmentBtn{
+    margin-top: 50px;
 }

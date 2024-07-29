@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Box } from "@mui/material";
 import styles from "./healthReminding.module.css";
+import { MakeAppointmentBtn } from "../make-appointment-btn/MakeAppointmentBtn";
 
 export const HealthReminding: FC = () => {
   const paragraphs = [
@@ -25,9 +26,7 @@ export const HealthReminding: FC = () => {
             ))}
           </Box>
         </Box>
-        <button className={styles.makeAppointmentBtn}>
-          Записаться на прием
-        </button>
+        <MakeAppointmentBtn />
       </Box>
     </>
   );

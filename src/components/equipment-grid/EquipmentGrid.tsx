@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Equipment, defaultEquipment } from "../../types/Equipment";
 import { Box, Card, CardContent, CardMedia } from "@mui/material";
 import styles from "./equipmentGrid.module.css";
+import { MakeAppointmentBtn } from "../make-appointment-btn/MakeAppointmentBtn";
 
 interface Props {
   equipmentItems: Equipment[];
@@ -13,7 +14,7 @@ export const EquipmentGrid: FC<Props> = ({
   return (
     <>
       <Box className={styles.equipmentGridContainer}>
-        <p>Наши технологии и оборудования</p>
+        <p className={styles.title}>Наши технологии и оборудования</p>
         <Box className={styles.cardsContainer}>
           {equipmentItems.map((item, id) => (
             <Card key={id} className={styles.equipmentCard}>
@@ -29,6 +30,7 @@ export const EquipmentGrid: FC<Props> = ({
             </Card>
           ))}
         </Box>
+        <MakeAppointmentBtn />
       </Box>
     </>
   );

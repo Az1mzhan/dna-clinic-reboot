@@ -48,29 +48,13 @@
 
 .title {
     font-size: 48px;
-    line-height: 59px;
+    margin-bottom: 0;
 }
 
 .subtitle {
     font-size: 20px;
     line-height: 24px;
     white-space: pre-wrap;
+    margin-top: 0;
 }
 
-.makeAppointmentBtn {
-    width: 397px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFA500;
-    color: white;
-    border: none;
-    border-radius: 70px;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    font-size: 19px;
-    letter-spacing: 0.05em;
-    line-height: 61px;
-    text-transform: uppercase;
-}
