@@ -16,39 +16,35 @@ export const Footer: FC = () => {
   ];
 
   return (
-    <>
-      <footer className={styles.footer}>
+    <footer className={styles.footer}>
+      <Box className={styles.footerLeft}>
         <Box>
-          <Box>
-            <img src={logo_white} />
-            <p>Быстро. Надежно. Качественно.</p>
-          </Box>
-          <p>Все права защищены, {currentYear}.</p>
+          <img src={logo_white} alt="logo_white" />
+          <p className={styles.tagline}>Быстро. Надежно. Качественно.</p>
         </Box>
-        <Box>
-          <Box>
-            {navLinks.map((link, id) => (
-              <Link key={id} href={link.url}>
-                {link.title}
-              </Link>
-            ))}
-          </Box>
-          <Box>
-            <Box>
-              <img src={phone} alt="phone" />
-              <p>+7 702 301 2796</p>
-            </Box>
-            <Box>
-              <img src={instagram} alt="instagram" />
-              <p>@dnkclinic_kz</p>
-            </Box>
-            <Box>
-              <img src={mail} alt="email" />
-              <p>support@dnkclinic.kz</p>
-            </Box>
-          </Box>
+        <p className={styles.copyright}>Все права защищены, {currentYear}.</p>
+      </Box>
+      <Box className={styles.navLinks}>
+        {navLinks.map((link, id) => (
+          <Link key={id} href={link.url}>
+            {link.title}
+          </Link>
+        ))}
+      </Box>
+      <Box className={styles.footerRight}>
+        <Box className={styles.link}>
+          <img src={phone} alt="phone" />
+          <p>+7 702 301 2796</p>
         </Box>
-      </footer>
-    </>
+        <Box className={styles.link}>
+          <img src={instagram} alt="instagram" />
+          <p>@dnkclinic_kz</p>
+        </Box>
+        <Box className={styles.link}>
+          <img src={mail} alt="email" />
+          <p>support@dnkclinic.kz</p>
+        </Box>
+      </Box>
+    </footer>
   );
 };
