@@ -3,11 +3,10 @@
     background: linear-gradient(154.42deg, #417CFF 0.69%, #0039B6 70.47%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.container p {
+.container > h1, .container > h2, .container h3, .container p {
     margin-inline: 0;
     margin-bottom: 0;
     color: white;
@@ -32,19 +31,33 @@
 
 .bannersContainer {
     margin-top: 36px;
-    display: flex;
-    flex-direction: column;
-    gap: 54px;
 }
 
 .serviceBanner {
-    width: 100%;
-    max-width: 1115px;
+    width: 1115px;
     min-height: 346px;
     display: flex;
+    border-radius: 10px;
+}
+
+.serviceBanner:not(:first-child) {
+    margin-top: 54px;
+}
+
+.serviceBanner:last-child {
+    margin-bottom: 112px;
+}
+
+.serviceBanner > img {
+    border-radius: 10px;
+}
+
+.bannerInfo {
+    margin-left: 26px;
 }
 
 .bannerTitle {
+    margin-top: 38px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 28px;
@@ -52,8 +65,25 @@
 }
 
 .bannerDescription {
+    margin-top: 42px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 35px;
+}
+
+.buttonsContainer > button {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 12.2px;
 }

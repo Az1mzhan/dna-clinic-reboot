@@ -1,0 +1,67 @@
+.medicsPage{
+  background: linear-gradient(163deg, rgba(65,124,255,1) 0%, rgba(0,57,182,1) 100%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.title{
+  font-size: 48px;
+  margin-bottom: 0;
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.titledesc{
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  white-space: pre-wrap;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.medicsForm{
+  max-width: 1152px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.tableRow{
+  max-height: 72px;
+}
+
+.medicAvatar{
+  display: flex;
+  gap: 8px;
+}
+
+.medicCost{
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.medicCostPaid{
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #0139B6;
+  color: white;
+}
+
+.medicMore{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.medicMore a{
+  text-decoration: none;
+  color: black;
+}

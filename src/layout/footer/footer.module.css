@@ -66,4 +66,21 @@
 
 footer p {
     margin: 0;
+}   
+
+@media (max-width: 640px){
+    .navLinks{
+        display: none !important;
+    }
+    .footer{
+        min-height: auto;
+        height: max-content;
+        flex-direction: column;
+    }
+    .footerRight{
+        margin-top: 40px;
+    }
+    .footerLeft{
+        text-align: center;
+    }
 }

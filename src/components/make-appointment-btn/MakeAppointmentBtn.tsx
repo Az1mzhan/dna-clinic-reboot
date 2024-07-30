@@ -1,7 +1,6 @@
 import { FC } from "react";
 import styles from "./make-appointment-btn.module.css";
 
-
 export const MakeAppointmentBtn: FC = () => {
   return (
     <>

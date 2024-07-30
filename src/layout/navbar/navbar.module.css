@@ -47,3 +47,82 @@
     font-size: 16px;
     line-height: 20px;
 }
+
+.openMenu{
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+
+.openMenu img{
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+
+@media (max-width: 1024px) {
+    .navbar{
+        position: fixed;
+        background-color: #2A59C1;
+    }
+    .contentContainer{
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .mobMenu{
+        position: fixed;
+        left: 0;
+        top: 105px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #2A59C1;
+        z-index: 11;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .mobMenuOpened{
+        position: fixed;
+        left: 0;
+        top: 105px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #2A59C1;
+        z-index: 11;
+        opacity: 1;
+        pointer-events: all;
+    }
+    .mobMenu a,
+    .mobMenuOpened a{
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 22px;
+        padding: 20px;
+    }
+    .navbarDim{
+        background-color: black;
+        opacity: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 110px;
+        left: 0;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .navbarDimOpened{
+        background-color: black;
+        opacity: .5;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 110px;
+        left: 0;
+        z-index: 10;
+        pointer-events: all;
+    }
+}

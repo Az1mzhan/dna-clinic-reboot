@@ -3,6 +3,8 @@ import { Equipment, defaultEquipment } from "../../types/Equipment";
 import { Box, Card, CardContent, CardMedia } from "@mui/material";
 import styles from "./equipmentGrid.module.css";
 import { MakeAppointmentBtn } from "../make-appointment-btn/MakeAppointmentBtn";
+import { useMediaQuery } from 'usehooks-ts';
+
 
 interface Props {
   equipmentItems: Equipment[];
@@ -11,10 +13,12 @@ interface Props {
 export const EquipmentGrid: FC<Props> = ({
   equipmentItems = Array(3).fill(defaultEquipment),
 }) => {
+  const smallScreen = useMediaQuery('(max-width: 1024px)')
+
   return (
     <>
       <Box className={styles.equipmentGridContainer}>
-        <p className={styles.title}>Наши технологии и оборудования</p>
+        <p className={styles.title}>{!smallScreen ? 'Наши технологии и оборудования' : "Оборудование"}</p>
         <Box className={styles.cardsContainer}>
           {equipmentItems.map((item, id) => (
             <Card key={id} className={styles.equipmentCard}>
@@ -30,7 +34,7 @@ export const EquipmentGrid: FC<Props> = ({
             </Card>
           ))}
         </Box>
-        <MakeAppointmentBtn />
+        <MakeAppointmentBtn/>
       </Box>
     </>
   );

@@ -26,7 +26,7 @@ export const HealthReminding: FC = () => {
             ))}
           </Box>
         </Box>
-        <MakeAppointmentBtn />
+        <MakeAppointmentBtn/>
       </Box>
     </>
   );

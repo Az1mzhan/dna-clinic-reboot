@@ -8,6 +8,8 @@
     background-image: url("../../assets/bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .mainContent {
@@ -42,7 +44,7 @@
     color: white;
 }
 
-.textContainer > p, .textContainer > h1 {
+.textContainer > p {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.02em;
@@ -52,11 +54,47 @@
     max-width: 685px;
     font-weight: bold;
     font-size: 40px;
-    line-height: 49px;
 }
 
 .title {
     font-weight: 600;
     font-size: 20px;
-    line-height: 24px;
+}
+
+@media (max-width: 1023px){
+    .container{
+        flex-direction: column-reverse;
+        padding: 150px 20px;
+        box-sizing: border-box;
+        gap: 30px;
+    }
+
+    .slogan{
+        font-size: 28px;
+    }
+
+    .mainContent{
+        height: max-content;
+        min-height: auto;
+    }
+
+    .makeAppointmentBtn{
+        margin-top: 30px;
+        width: max-content;
+        padding-left: 20px;
+        font-size: 16px;
+        height: 56px;
+    }
+
+    .makeAppointmentBtn img{
+        width: 42px;
+        height: 54px;
+        margin-left: 10px;
+    }
+
+    .expert{
+        width: 100%;
+        max-width: 250px;
+        height: 270px;
+    }
 }

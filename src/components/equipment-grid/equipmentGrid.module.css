@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .title {
@@ -24,6 +26,8 @@
     display: flex;
     gap: 13.5px;
     margin-bottom: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .equipmentCard {
@@ -31,6 +35,7 @@
     padding: 13px;
     border-radius: 13px;
     font-family: "Montserrat", sans-serif;
+    flex-shrink: 0;
 }
 
 .equipmentCard li {
@@ -44,4 +49,20 @@
 
 .makeAppointmentBtn{
     margin-top: 50px;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    .cardsContainer{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .equipmentGridContainer{
+        padding-bottom: 60px;
+    }
 }

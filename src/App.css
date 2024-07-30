@@ -11,3 +11,15 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+h1, h2, h3, h4, h5, h6, p, a {
+    letter-spacing: 0.05em;
+}
+
+hr {
+    width: 68.51px;
+    margin: 18px 0 0;
+    background-color: white;
+    border: 1.5px solid white;
+    border-inline: none;
+}
