@@ -42,7 +42,7 @@
     color: white;
 }
 
-.textContainer > p {
+.textContainer > p, .textContainer > h1 {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.02em;

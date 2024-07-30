@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    background: linear-gradient(154.42deg, #417CFF 0.69%, #0039B6 70.47%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    margin-inline: 0;
+    margin-bottom: 0;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+.containerTitle {
+    margin-top: 196px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.containerSubtitle {
+    margin-top: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.bannersContainer {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.serviceBanner {
+    width: 100%;
+    max-width: 1115px;
+    min-height: 346px;
+    display: flex;
+}
+
+.bannerTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.bannerDescription {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}

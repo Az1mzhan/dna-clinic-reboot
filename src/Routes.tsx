@@ -20,6 +20,13 @@ const MedicsPage = lazy(() =>
   })
 );
 
+const ServicesPage = lazy(() =>
+  import("./pages/services-page/ServicesPage").catch((err) => {
+    console.error(err);
+    return { default: CircularProgress };
+  })
+);
+
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
@@ -36,6 +43,14 @@ export const router = createBrowserRouter(
         element={
           <Suspense fallback={<CircularProgress />}>
             <MedicsPage />
+          </Suspense>
+        }
+      />
+      <Route
+        path="services"
+        element={
+          <Suspense fallback={<CircularProgress />}>
+            <ServicesPage />
           </Suspense>
         }
       />
