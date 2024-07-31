@@ -2,7 +2,7 @@
   background: linear-gradient(163deg, rgba(65,124,255,1) 0%, rgba(0,57,182,1) 100%);
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding: 150px 20px 0 20px;
 }
 
 .title{
@@ -28,7 +28,8 @@
   max-width: 1152px;
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 52px auto 107px;
+  border-radius: 10px;
 }
 
 .tableRow{
@@ -64,4 +65,14 @@
 .medicMore a{
   text-decoration: none;
   color: black;
+}
+
+.formInput{
+  padding: 15px;
+  display: flex;
+}
+
+.input{
+  max-width: 300px;
+  margin-right: 13px;
 }
