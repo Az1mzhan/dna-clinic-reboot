@@ -29,23 +29,21 @@
     line-height: 29px;
 }
 
-.bannersContainer {
-    margin-top: 36px;
+.carousel {
+    width: 100%;
+    margin: 36px 0 112px;
 }
 
 .serviceBanner {
     width: 1115px;
     min-height: 346px;
     display: flex;
+    margin-inline: auto;
     border-radius: 10px;
 }
 
 .serviceBanner:not(:first-child) {
     margin-top: 54px;
-}
-
-.serviceBanner:last-child {
-    margin-bottom: 112px;
 }
 
 .serviceBanner > img {

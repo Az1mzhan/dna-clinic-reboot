@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Carousel from "react-material-ui-carousel";
 import { defaultServiceBanners } from "../../types/ServiceBanner";
 import styles from "./servicesPage.module.css";
 
@@ -10,19 +11,31 @@ const ServicesPage: FC = () => {
         <h2 className={styles.containerSubtitle}>
           Медицинские услуги на любой случай.
         </h2>
-        <div className={styles.bannersContainer}>
+        <Carousel className={styles.carousel} navButtonsAlwaysInvisible={true}>
           {defaultServiceBanners.map((banner, id) => (
             <div
               key={id}
               className={styles.serviceBanner}
               style={{ background: banner.bgColor }}
             >
-              <img src={banner.icon} alt={banner.title} width={473} height={346} />
+              <img
+                src={banner.icon}
+                alt={banner.title}
+                width={473}
+                height={346}
+              />
               <div className={styles.bannerInfo}>
                 <h3 className={styles.bannerTitle}>{banner.title}</h3>
-                <hr/>
+                <hr />
                 <p className={styles.bannerDescription}>{banner.description}</p>
-                <div className={styles.buttonsContainer} style={{ width: banner.containerWidth ? banner.containerWidth : "444px" }}>
+                <div
+                  className={styles.buttonsContainer}
+                  style={{
+                    width: banner.containerWidth
+                      ? banner.containerWidth
+                      : "444px",
+                  }}
+                >
                   {banner.serviceButtons.map((button, id) => (
                     <button
                       key={id}
@@ -43,7 +56,7 @@ const ServicesPage: FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </Carousel>
       </div>
     </>
   );
