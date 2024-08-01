@@ -11,7 +11,26 @@ const ServicesPage: FC = () => {
         <h2 className={styles.containerSubtitle}>
           Медицинские услуги на любой случай.
         </h2>
-        <Carousel className={styles.carousel} navButtonsAlwaysInvisible={true}>
+        <Carousel
+          className={styles.carousel}
+          navButtonsAlwaysVisible={true}
+          navButtonsProps={{
+            style: {
+              backgroundColor: "rgba(0, 0, 0, 0.2)",
+              color: "white",
+            },
+          }}
+          indicatorIconButtonProps={{
+            style: {
+              color: "white",
+            },
+          }}
+          activeIndicatorIconButtonProps={{
+            style: {
+              color: "rgba(255,255,255,0.5)",
+            },
+          }}
+        >
           {defaultServiceBanners.map((banner, id) => (
             <div
               key={id}
@@ -52,7 +71,7 @@ const ServicesPage: FC = () => {
                     </button>
                   ))}
                 </div>
-                <p>{banner?.remark}</p>
+                <p className={styles.remark}>{banner?.remark}</p>
               </div>
             </div>
           ))}
