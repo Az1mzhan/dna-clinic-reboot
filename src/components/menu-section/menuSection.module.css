@@ -1,0 +1,46 @@
+.menuSection {
+    width: 1115px;
+    height: 610px;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 29px;
+    column-gap: 43px;
+    margin: 41px 0 109px;
+}
+
+.letterSection {
+    width: 363px;
+    display: flex;
+    gap: 19px;
+}
+
+.letterTitle {
+    margin: 0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.letterList {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    white-space: pre-wrap;
+    opacity: 0.8;
+    transition: all .2s ease-out;
+}
+
+.link:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    opacity: 1;
+}

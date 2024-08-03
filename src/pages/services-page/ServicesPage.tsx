@@ -2,6 +2,8 @@ import { FC } from "react";
 import Carousel from "react-material-ui-carousel";
 import { defaultServiceBanners } from "../../types/ServiceBanner";
 import styles from "./servicesPage.module.css";
+import { MenuSection } from "../../components/menu-section/MenuSection";
+import { defaultMenus } from "../../types/Menu";
 
 const ServicesPage: FC = () => {
   return (
@@ -76,6 +78,7 @@ const ServicesPage: FC = () => {
             </div>
           ))}
         </Carousel>
+        <MenuSection menu={defaultMenus[0]} />
       </div>
     </>
   );
