@@ -1,0 +1,47 @@
+.reviewsPage {
+    width: 100%;
+    background: linear-gradient(154.42deg, #417CFF 0.69%, #0039B6 70.47%);
+}
+
+.reviewsPageContentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviewsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 80px;
+}
+
+.review {
+    width: 514px;
+    color: white;
+}
+
+.reviewFirstLine {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewerName {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.reviewText {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
