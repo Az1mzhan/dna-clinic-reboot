@@ -1,0 +1,36 @@
+.aboutUsPage {
+    padding-bottom: 136px;
+}
+
+.companyInfoContainer {
+    display: flex;
+    gap: 36px;
+}
+
+.map {
+    width: 792px;
+    height: 392px;
+    border-radius: 10px;
+}
+
+.companyTextInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.companyInfoTitle, .companyInfo, .contactPhone {
+    margin: 0;
+}
+
+.companyInfoTitle {
+    font-weight: 600;
+}
+
+.contactPhone {
+    font-style: italic;
+}
