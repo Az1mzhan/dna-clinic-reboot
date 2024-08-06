@@ -34,6 +34,7 @@ body {
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
+    text-align: center;
 }
 
 .pageDescription {
@@ -42,6 +43,25 @@ body {
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+}
+
+.blueTitle, .blueSubtitle {
+    color: #0139B6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.blueTitle {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 0;
+}
+
+.blueSubtitle {
+    font-size: 20px;
+    line-height: 24px;
+    white-space: pre-wrap;
+    margin-top: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -101,5 +121,15 @@ hr {
 @media screen and (max-width: 600px) {
     h1, h2, h3, h4, h5, h6, p, a {
         padding-inline: 10px;
+    }
+
+    .pageTitle {
+        font-size: 40px;
+        line-height: 51px;
+    }
+
+    .blueTitle {
+        font-size: 32px;
+        line-height: 43px;
     }
 }

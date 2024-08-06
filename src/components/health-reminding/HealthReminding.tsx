@@ -16,8 +16,8 @@ export const HealthReminding: FC = () => {
     <>
       <Box className={styles.container}>
         <Box className={styles.textContainer}>
-          <p className={styles.title}>Не забывайте о здоровье</p>
-          <p className={styles.subtitle}>
+          <p className="blueTitle">Не забывайте о здоровье</p>
+          <p className="blueSubtitle">
             Когда вы в последний раз проходили осмотр?
           </p>
           <Box className={styles.paragraphsContainer}>
@@ -26,7 +26,7 @@ export const HealthReminding: FC = () => {
             ))}
           </Box>
         </Box>
-        <MakeAppointmentBtn/>
+        <MakeAppointmentBtn />
       </Box>
     </>
   );

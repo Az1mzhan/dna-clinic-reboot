@@ -96,3 +96,9 @@
     font-size: 10px;
     line-height: 12px;
 }
+
+@media screen and (max-width: 600px) {
+    .containerTitle {
+        font-size: 40px;
+    }
+}

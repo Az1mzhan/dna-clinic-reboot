@@ -5,8 +5,8 @@ const NotFoundPage: FC = () => {
   return (
     <div className={styles.notFoundPage}>
       <div className={styles.notFoundContentContainer}>
-        <h1 className={styles.notFoundPageTitle}>404</h1>
-        <h2 className={styles.notFoundPageDescription}>
+        <h1 className="pageTitle">404</h1>
+        <h2 className="pageDescription">
           Страница, которую вы запрашиваете, не существует. Возможно, она
           устарела, была удалена, или был введен неверный адрес в адресной
           строке
