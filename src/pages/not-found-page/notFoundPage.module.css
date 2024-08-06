@@ -1,0 +1,49 @@
+.notFoundPage {
+    width: 100%;
+    padding: 200px 0 100px;
+    background-image: url("../../assets/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.notFoundContentContainer {
+    max-width: 1115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 0 auto;
+}
+
+.notFoundPageTitle, .notFoundPageDescription {
+    font-family: "Montserrat", sans-serif;
+}
+
+.notFoundPageTitle {
+    padding: 25px;
+    background-color: #FFA500;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.notFoundPageDescription {
+    color: white;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    .notFoundContentContainer {
+        flex-direction: column;
+    }
+
+    .notFoundPageTitle {
+        margin: 0;
+    }
+
+    .notFoundPageDescription {
+        margin-top: 0;
+        text-align: center;
+    }
+}

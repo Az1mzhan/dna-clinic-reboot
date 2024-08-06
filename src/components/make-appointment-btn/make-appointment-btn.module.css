@@ -16,3 +16,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .makeAppointmentBtn {
+    width: 350px;
+  }
+}

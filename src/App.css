@@ -46,10 +46,48 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a {
     letter-spacing: 0.05em;
+    transition: all 0.2s ease-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    white-space: pre-wrap;
+    opacity: 0.8;
+    transition: all .2s ease-out;
+}
+
+.link:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    opacity: 1;
+}
+
+a:not(.link):hover {
+    opacity: 0.8;
 }
 
 button, img {
     user-select: none;
+}
+
+button:not(.MuiButtonBase-root) {
+    transition: all 0.2s ease-out;
+}
+
+button:not(.MuiButtonBase-root):hover {
+    opacity: 0.8;
 }
 
 hr {
@@ -58,4 +96,10 @@ hr {
     background-color: white;
     border: 1.5px solid white;
     border-inline: none;
+}
+
+@media screen and (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6, p, a {
+        padding-inline: 10px;
+    }
 }

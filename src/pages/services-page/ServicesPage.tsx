@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { MenuSection } from "../../components/menu-section/MenuSection";
+import Carousel from "react-material-ui-carousel";
 import { defaultServiceBanners } from "../../types/ServiceBanner";
 import { defaultMenus } from "../../types/Menu";
-import Carousel from "react-material-ui-carousel";
 import styles from "./servicesPage.module.css";
 
 const ServicesPage: FC = () => {

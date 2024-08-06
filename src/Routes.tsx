@@ -41,6 +41,13 @@ const AboutUsPage = lazy(() =>
   })
 );
 
+const NotFoundPage = lazy(() =>
+  import("./pages/not-found-page/NotFoundPage").catch((err) => {
+    console.error(err);
+    return { default: CircularProgress };
+  })
+);
+
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
@@ -81,6 +88,15 @@ export const router = createBrowserRouter(
         element={
           <Suspense fallback={<CircularProgress />}>
             <AboutUsPage />
+          </Suspense>
+        }
+      />
+      <Route
+        path="*"
+        exact={true}
+        element={
+          <Suspense fallback={<CircularProgress />}>
+            <NotFoundPage />
           </Suspense>
         }
       />

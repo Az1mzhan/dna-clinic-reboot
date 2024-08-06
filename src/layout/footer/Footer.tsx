@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Box, Link } from "@mui/material";
 import logo_white from "../../assets/logo_white.svg";
 import phone from "../../assets/phone.svg";
 import instagram from "../../assets/instagram.svg";
@@ -17,34 +16,40 @@ export const Footer: FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <Box className={styles.footerLeft}>
-        <Box>
+      <div className={styles.footerLeft}>
+        <div>
           <img src={logo_white} alt="logo_white" />
-          <p className={styles.tagline}>Быстро. Надежно. Качественно.</p>
-        </Box>
+          <h5 className={styles.tagline}>Быстро. Надежно. Качественно.</h5>
+        </div>
         <p className={styles.copyright}>Все права защищены, {currentYear}.</p>
-      </Box>
-      <Box className={styles.navLinks}>
+      </div>
+      <div className={styles.navLinks}>
         {navLinks.map((link, id) => (
-          <Link key={id} href={link.url}>
+          <a key={id} href={link.url}>
             {link.title}
-          </Link>
+          </a>
         ))}
-      </Box>
-      <Box className={styles.footerRight}>
-        <Box className={styles.link}>
+      </div>
+      <div className={styles.footerRight}>
+        <div className={styles.link}>
           <img src={phone} alt="phone" />
-          <p>+7 702 301 2796</p>
-        </Box>
-        <Box className={styles.link}>
+          <a className="link" href="tel:+77023012796">
+            +7 702 301 2796
+          </a>
+        </div>
+        <div className={styles.link}>
           <img src={instagram} alt="instagram" />
-          <p>@dnkclinic_kz</p>
-        </Box>
-        <Box className={styles.link}>
+          <a className="link" href="https://www.instagram.com/dnkclinic_kz/">
+            @dnkclinic_kz
+          </a>
+        </div>
+        <div className={styles.link}>
           <img src={mail} alt="email" />
-          <p>support@dnkclinic.kz</p>
-        </Box>
-      </Box>
+          <a className="link" href="mailto:support@dnkclinic.kz">
+            support@dnkclinic.kz
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };

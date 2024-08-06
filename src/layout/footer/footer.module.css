@@ -38,6 +38,11 @@
     opacity: .8;
 }
 
+.navLinks a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 .footer > div {
     display: flex;
     flex-direction: column;
@@ -58,6 +63,10 @@
     display: flex;
     margin-bottom: 20px;
     opacity: .8;
+}
+
+.link:hover {
+    opacity: 1;
 }
 
 .link img{

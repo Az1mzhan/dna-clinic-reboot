@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { defaultReviews } from "../../types/Review";
 import { Avatar, Rating } from "@mui/material";
+import { defaultReviews } from "../../types/Review";
 import styles from "./reviewsPage.module.css";
 
 const ReviewsPage: FC = () => {

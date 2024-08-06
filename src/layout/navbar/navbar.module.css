@@ -35,13 +35,18 @@
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    letter-spacing: 0.05em;
     text-decoration: none;
 }
 
 .navLinks > a {
     font-size: 18px;
     line-height: 22px;
+    transition: all 0.2s ease-out;
+}
+
+.navLinks > a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .phoneSection > p {
@@ -100,9 +105,15 @@
     .mobMenuOpened a{
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
+        font-weight: bold;
         color: white;
         font-size: 22px;
         padding: 20px;
+    }
+    .mobMenu a:hover,
+    .mobMenuOpened a:hover {
+        opacity: 0.8;
+        text-decoration: underline;
     }
     .navbarDim{
         background-color: black;
