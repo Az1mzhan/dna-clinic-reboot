@@ -19,7 +19,7 @@ import {
   TextField,
 } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import styles from "../../components/medics-table/MedicsTable.module.css";
+import styles from "./medicsPage.module.css";
 
 const MedicsPage: FC = () => {
   const [filter, setFilter] = useState<string>("Не выбрано");
