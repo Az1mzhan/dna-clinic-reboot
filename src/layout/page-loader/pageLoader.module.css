@@ -1,0 +1,10 @@
+.pageLoader {
+    width: 100%;
+    min-height: calc(100vh - 105px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

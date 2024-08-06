@@ -8,6 +8,7 @@ import styles from "./servicesPage.module.css";
 
 const ServicesPage: FC = () => {
   const smallScreen = useMediaQuery("(max-width: 1167px)");
+
   return (
     <div className={styles.container}>
       <h1 className={styles.containerTitle}>Наши услуги</h1>

@@ -4,47 +4,47 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { CircularProgress } from "@mui/material";
+import { PageLoader } from "./layout/page-loader/PageLoader";
 
 const MainPage = lazy(() =>
   import("./pages/MainPage").catch((err) => {
     console.error(err);
-    return { default: CircularProgress };
+    return { default: PageLoader };
   })
 );
 
 const MedicsPage = lazy(() =>
   import("./pages/medics-page/MedicsPage").catch((err) => {
     console.error(err);
-    return { default: CircularProgress };
+    return { default: PageLoader };
   })
 );
 
 const ServicesPage = lazy(() =>
   import("./pages/services-page/ServicesPage").catch((err) => {
     console.error(err);
-    return { default: CircularProgress };
+    return { default: PageLoader };
   })
 );
 
 const ReviewsPage = lazy(() =>
   import("./pages/reviews-page/ReviewsPage").catch((err) => {
     console.error(err);
-    return { default: CircularProgress };
+    return { default: PageLoader };
   })
 );
 
 const AboutUsPage = lazy(() =>
   import("./pages/about-us-page/AboutUsPage").catch((err) => {
     console.error(err);
-    return { default: CircularProgress };
+    return { default: PageLoader };
   })
 );
 
 const NotFoundPage = lazy(() =>
   import("./pages/not-found-page/NotFoundPage").catch((err) => {
     console.error(err);
-    return { default: CircularProgress };
+    return { default: PageLoader };
   })
 );
 
@@ -54,7 +54,7 @@ export const router = createBrowserRouter(
       <Route
         index
         element={
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<PageLoader />}>
             <MainPage />
           </Suspense>
         }
@@ -62,7 +62,7 @@ export const router = createBrowserRouter(
       <Route
         path="medics"
         element={
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<PageLoader />}>
             <MedicsPage />
           </Suspense>
         }
@@ -70,7 +70,7 @@ export const router = createBrowserRouter(
       <Route
         path="services"
         element={
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<PageLoader />}>
             <ServicesPage />
           </Suspense>
         }
@@ -78,7 +78,7 @@ export const router = createBrowserRouter(
       <Route
         path="reviews"
         element={
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<PageLoader />}>
             <ReviewsPage />
           </Suspense>
         }
@@ -86,16 +86,15 @@ export const router = createBrowserRouter(
       <Route
         path="about-us"
         element={
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<PageLoader />}>
             <AboutUsPage />
           </Suspense>
         }
       />
       <Route
         path="*"
-        exact={true}
         element={
-          <Suspense fallback={<CircularProgress />}>
+          <Suspense fallback={<PageLoader />}>
             <NotFoundPage />
           </Suspense>
         }
