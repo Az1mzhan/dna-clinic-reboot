@@ -1,18 +1,20 @@
 import { FC } from "react";
-import Carousel from "react-material-ui-carousel";
-import { defaultServiceBanners } from "../../types/ServiceBanner";
-import styles from "./servicesPage.module.css";
+import { useMediaQuery } from "usehooks-ts";
 import { MenuSection } from "../../components/menu-section/MenuSection";
+import { defaultServiceBanners } from "../../types/ServiceBanner";
 import { defaultMenus } from "../../types/Menu";
+import Carousel from "react-material-ui-carousel";
+import styles from "./servicesPage.module.css";
 
 const ServicesPage: FC = () => {
+  const smallScreen = useMediaQuery("(max-width: 1167px)");
   return (
-    <>
-      <div className={styles.container}>
-        <h1 className={styles.containerTitle}>Наши услуги</h1>
-        <h2 className={styles.containerSubtitle}>
-          Медицинские услуги на любой случай.
-        </h2>
+    <div className={styles.container}>
+      <h1 className={styles.containerTitle}>Наши услуги</h1>
+      <h2 className={styles.containerSubtitle}>
+        Медицинские услуги на любой случай.
+      </h2>
+      {!smallScreen && (
         <Carousel
           className={styles.carousel}
           navButtonsAlwaysVisible={true}
@@ -78,9 +80,9 @@ const ServicesPage: FC = () => {
             </div>
           ))}
         </Carousel>
-        <MenuSection menu={defaultMenus[0]} />
-      </div>
-    </>
+      )}
+      <MenuSection menu={defaultMenus[0]} />
+    </div>
   );
 };
 

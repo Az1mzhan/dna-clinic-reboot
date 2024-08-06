@@ -19,6 +19,7 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 59px;
+    text-align: center;
 }
 
 .containerSubtitle {
@@ -27,6 +28,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    text-align: center;
 }
 
 .carousel {
@@ -36,7 +38,7 @@
 
 .serviceBanner {
     width: 1115px;
-    min-height: 346px;
+    height: 346px;
     display: flex;
     margin-inline: auto;
     border-radius: 10px;
@@ -48,6 +50,7 @@
 
 .serviceBanner > img {
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .bannerInfo {

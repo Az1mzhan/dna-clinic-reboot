@@ -5,6 +5,7 @@
 .companyInfoContainer {
     display: flex;
     gap: 36px;
+    padding: 0px 30px;
 }
 
 .map {
@@ -32,8 +33,23 @@
 
 .companyInfoTitle {
     font-weight: 600;
+    
 }
 
 .contactPhone {
     font-style: italic;
+}
+
+@media (max-width: 1024px){
+    .companyInfoContainer{
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .map{
+        width: 100%;
+    }
+    .map > ymaps:first-child{
+        width: 100%;
+    }
 }

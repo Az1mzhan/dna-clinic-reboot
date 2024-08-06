@@ -14,7 +14,7 @@ const MainPage = lazy(() =>
 );
 
 const MedicsPage = lazy(() =>
-  import("./pages/MedicsPage").catch((err) => {
+  import("./pages/medics-page/MedicsPage").catch((err) => {
     console.error(err);
     return { default: CircularProgress };
   })

@@ -1,9 +1,9 @@
 import { CallbackFunctionVariadicAnyReturn } from "./CallbackFunctionVariadicAnyReturn";
-import banner_1 from "../assets/banner_1.svg";
-import banner_2 from "../assets/banner_2.svg";
-import banner_3 from "../assets/banner_3.svg";
-import banner_4 from "../assets/banner_4.svg";
-import banner_5 from "../assets/banner_5.svg";
+import banner_1 from "../assets/banner_1.webp";
+import banner_2 from "../assets/banner_2.png";
+import banner_3 from "../assets/banner_3.png";
+import banner_4 from "../assets/banner_4.png";
+import banner_5 from "../assets/banner_5.png";
 
 export const defaultServiceBanners: ServiceBanner[] = [
   {

@@ -1,5 +1,15 @@
+.reviewsPage {
+    width: 100%;
+    background: linear-gradient(154.42deg, #417CFF 0.69%, #0039B6 70.47%);
+}
+
 .reviewsPageContentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
     padding-bottom: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .reviewsContainer {
@@ -7,10 +17,12 @@
     flex-wrap: wrap;
     column-gap: 70px;
     row-gap: 80px;
+    justify-content: center;
+    padding: 0px 20px;
 }
 
 .review {
-    width: 514px;
+    max-width: 514px;
     color: white;
 }
 
