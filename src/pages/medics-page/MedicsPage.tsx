@@ -46,6 +46,7 @@ const MedicsPage: FC = () => {
             className={styles.input}
             label="Имя, должность, опыт работы"
             variant="outlined"
+            sx={{ marginRight: "13px" }}
           />
           <FormControl fullWidth>
             <InputLabel id="filterLabel">Фильтр по сведению</InputLabel>
