@@ -1,8 +1,9 @@
 import { FC, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import logo from "../../assets/logo.svg";
 import phone from "../../assets/phone.svg";
-import menu from "../../assets/menu.svg";
 import styles from "./navbar.module.css";
 
 export const Navbar: FC = () => {
@@ -52,7 +53,11 @@ export const Navbar: FC = () => {
         )}
         {smallScreen && (
           <button onClick={handleMenu} className={styles.openMenu}>
-            <img src={menu} alt="" />
+            {opened ? (
+              <CloseIcon sx={{ color: "white" }} />
+            ) : (
+              <MenuIcon sx={{ color: "white" }} />
+            )}
           </button>
         )}
       </div>

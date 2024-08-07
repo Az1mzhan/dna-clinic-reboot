@@ -18,7 +18,7 @@ export const EquipmentGrid: FC<Props> = ({
     <>
       <Box className={styles.equipmentGridContainer}>
         <p className="blueTitle" style={{ margin: "90px 0 60px" }}>
-          {!smallScreen ? "Наши технологии и оборудования" : "Оборудование"}
+          {!smallScreen ? "Наши технологии и оборудования" : "Оборудования"}
         </p>
         <Box className={styles.cardsContainer}>
           {equipmentItems.map((item, id) => (

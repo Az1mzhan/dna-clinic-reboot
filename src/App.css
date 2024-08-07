@@ -76,16 +76,16 @@ h1, h2, h3, h4, h5, h6, p, a {
     transition: all 0.2s ease-out;
 }
 
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
 a {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-button {
-    -webkit-tap-highlight-color: transparent;
 }
 
 img {

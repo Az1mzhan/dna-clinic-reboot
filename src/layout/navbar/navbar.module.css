@@ -77,6 +77,9 @@
         padding: 0 20px;
         box-sizing: border-box;
     }
+    .mobMenu, .mobMenuOpened, .openMenu {
+        transition: all 0.375s ease-out;
+    }
     .mobMenu{
         position: fixed;
         left: 0;
@@ -107,7 +110,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
         color: white;
-        font-size: 22px;
+        font-size: 18px;
         padding: 20px;
     }
     .mobMenu a:hover,
