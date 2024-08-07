@@ -84,6 +84,14 @@ a:hover {
     text-decoration: underline;
 }
 
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    pointer-events: none;
+}
+
 .link {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -121,7 +129,7 @@ hr {
     border-inline: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     h1, h2, h3, h4, h5, h6, p, a {
         padding-inline: 10px;
     }

@@ -1,15 +1,16 @@
 .menuSection {
-    width: 1115px;
+    max-width: 1115px;
     height: 610px;
     display: flex;
     flex-flow: column wrap;
     row-gap: 29px;
     column-gap: 43px;
     margin: 41px 0 109px;
+    overflow: hidden;
 }
 
 .letterSection {
-    width: 363px;
+    max-width: 363px;
     display: flex;
     gap: 19px;
 }
@@ -43,4 +44,33 @@
     text-decoration: underline;
     font-weight: 600;
     opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 1058px) {
+    .menuSection{
+        height: 826px;
+    }
+    .letterSection{
+        width: 196px;
+    }
+}
+
+@media (max-width: 710px) {
+    .menuSection{
+        height: 975px;
+    }
+    .letterSection{
+        width: 196px;
+    }
+}
+
+@media (max-width: 461px) {
+    .menuSection{
+        height: max-content;
+        flex-wrap: nowrap;
+    }
+    .letterSection{
+        width: 100%;
+    }
 }
