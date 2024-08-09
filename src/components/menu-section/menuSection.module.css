@@ -29,24 +29,6 @@
     flex-direction: column;
 }
 
-.link {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    white-space: pre-wrap;
-    opacity: 0.8;
-    transition: all .2s ease-out;
-}
-
-.link:hover {
-    text-decoration: underline;
-    font-weight: 600;
-    opacity: 1;
-    cursor: pointer;
-}
-
 @media (max-width: 1058px) {
     .menuSection{
         height: 826px;

@@ -115,6 +115,7 @@ img {
     text-decoration: underline;
     font-weight: 600;
     opacity: 1;
+    cursor: pointer;
 }
 
 a:not(.link):hover {

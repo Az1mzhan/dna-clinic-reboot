@@ -25,7 +25,7 @@ export const MenuSection: FC<Props> = ({ menu }: Props) => {
                 {menu.list
                   .filter((item) => item.label.toLowerCase().startsWith(letter))
                   .map((item, id) => (
-                    <a key={id} className={styles.link} href={item.link}>
+                    <a key={id} className="link" href={item.link}>
                       {item.label}
                     </a>
                   ))}
