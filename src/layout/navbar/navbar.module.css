@@ -70,7 +70,6 @@
 @media (max-width: 1024px) {
     .navbar{
         position: fixed;
-        background-color: #2A59C1;
     }
     .contentContainer{
         justify-content: space-between;

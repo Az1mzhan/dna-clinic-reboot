@@ -35,7 +35,12 @@ export const Navbar: FC = () => {
         className={!opened ? styles.navbarDim : styles.navbarDimOpened}
       />
       <div className={styles.contentContainer}>
-        <img src={logo} alt="logo" width={117} height={59} />
+        <img
+          src={logo}
+          alt="logo"
+          width={smallScreen ? 79 : 117}
+          height={smallScreen ? 40 : 59}
+        />
         {!smallScreen && (
           <div className={styles.navLinks}>
             {navLinks.map((link, id) => (
@@ -54,9 +59,9 @@ export const Navbar: FC = () => {
         {smallScreen && (
           <button onClick={handleMenu} className={styles.openMenu}>
             {opened ? (
-              <CloseIcon sx={{ color: "white" }} />
+              <CloseIcon sx={{ color: "white", fontSize: "40px" }} />
             ) : (
-              <MenuIcon sx={{ color: "white" }} />
+              <MenuIcon sx={{ color: "white", fontSize: "40px" }} />
             )}
           </button>
         )}
