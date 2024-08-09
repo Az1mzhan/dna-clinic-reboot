@@ -19,7 +19,7 @@ export const MakeAppointmentBtn: FC<Props> = ({ introductory }: Props) => {
       document.body.className += "popUp";
     }
   }
-  if (introductory) {
+  if (!introductory) {
     return (
       <>
         <button className={styles.makeAppointmentBtn} onClick={show}>
