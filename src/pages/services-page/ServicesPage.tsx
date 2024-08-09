@@ -13,7 +13,7 @@ const ServicesPage: FC = () => {
     <div className={styles.container}>
       <h1 className={styles.containerTitle}>Наши услуги</h1>
       <h2 className={styles.containerSubtitle}>
-        Медицинские услуги на любой случай.
+        Наши услуги надежные и точные.
       </h2>
       {!smallScreen && (
         <Carousel
