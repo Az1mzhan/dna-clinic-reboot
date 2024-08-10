@@ -30,10 +30,10 @@ export const Navbar: FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div
-        onClick={handleMenu}
-        className={!opened ? styles.navbarDim : styles.navbarDimOpened}
-      />
+      {/*<div*/}
+      {/*  onClick={handleMenu}*/}
+      {/*  className={!opened ? styles.navbarDim : styles.navbarDimOpened}*/}
+      {/*/>*/}
       <div className={styles.contentContainer}>
         <img
           src={logo}
@@ -59,9 +59,9 @@ export const Navbar: FC = () => {
         {smallScreen && (
           <button onClick={handleMenu} className={styles.openMenu}>
             {opened ? (
-              <CloseIcon sx={{ color: "white", fontSize: "40px" }} />
+              <CloseIcon sx={{ color: "white", fontSize: "30px" }} />
             ) : (
-              <MenuIcon sx={{ color: "white", fontSize: "40px" }} />
+              <MenuIcon sx={{ color: "white", fontSize: "30px" }} />
             )}
           </button>
         )}

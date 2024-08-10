@@ -29,6 +29,25 @@ body.popUp{
 .gradientBg {
     width: 100%;
     background: linear-gradient(154.42deg, #417CFF 0.69%, #0039B6 70.47%);
+    color: white;
+}
+
+.imageBg {
+    width: 100%;
+    background-image: url("./assets/bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.imageBg1 {
+    width: 100%;
+    background-image: url("./assets/bg_1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .contentContainer {
@@ -131,10 +150,9 @@ button:not(.MuiButtonBase-root):hover {
 }
 
 hr {
-    width: 68.51px;
-    margin: 18px 0 0;
-    background-color: white;
-    border: 1.5px solid white;
+    width: 221px;
+    margin: 10px 0 0;
+    border: 1px solid #A2A2A2;
     border-inline: none;
 }
 

@@ -11,7 +11,7 @@ export const MenuSection: FC<Props> = ({ menu }: Props) => {
 
   return (
     <>
-      <div className={styles.menuSection}>
+      <div className={styles.menuSection} style={{ height: menu.height }}>
         {alphabet
           .filter((letter) =>
             menu.list
@@ -25,7 +25,12 @@ export const MenuSection: FC<Props> = ({ menu }: Props) => {
                 {menu.list
                   .filter((item) => item.label.toLowerCase().startsWith(letter))
                   .map((item, id) => (
-                    <a key={id} className="link" href={item.link}>
+                    <a
+                      key={id}
+                      className="link"
+                      href={item.link}
+                      style={{ color: "#0139B6" }}
+                    >
                       {item.label}
                     </a>
                   ))}

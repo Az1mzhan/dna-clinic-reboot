@@ -3,7 +3,7 @@ import analyses_preparation from "../assets/analyses_preparation.webp";
 import getting_results from "../assets/getting_results.webp";
 import prices from "../assets/prices.webp";
 
-export const defaultServiceMiniCards: AnalysisMiniCard[] = [
+export const defaultAnalysesMiniCards: AnalysisMiniCard[] = [
   {
     title: "Сдача анализов на дому",
     icon: home_analyses,

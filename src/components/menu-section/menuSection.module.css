@@ -1,11 +1,10 @@
 .menuSection {
     max-width: 1115px;
-    height: 610px;
     display: flex;
     flex-flow: column wrap;
     row-gap: 29px;
     column-gap: 43px;
-    margin: 41px 0 109px;
+    margin-top: 41px;
     overflow: hidden;
 }
 
@@ -17,7 +16,7 @@
 
 .letterTitle {
     margin: 0;
-    color: white;
+    color: #0139B6;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 20px;
