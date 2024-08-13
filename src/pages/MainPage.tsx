@@ -3,10 +3,10 @@ import { IntroductorySection } from "../components/introductory-section/Introduc
 import { HealthReminding } from "../components/health-reminding/HealthReminding";
 import { ServicesSection } from "../components/services-section/ServicesSection";
 import { MakeAppointmentSection } from "../components/make-appointment-section/MakeAppointmentSection";
-import { useMediaQuery } from 'usehooks-ts';
+import { useMediaQuery } from "usehooks-ts";
 
 const MainPage: FC = () => {
-  const smallScreen = useMediaQuery('(max-width: 1024px)')
+  const smallScreen = useMediaQuery("(max-width: 1024px)");
   return (
     <>
       <IntroductorySection />

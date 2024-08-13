@@ -98,10 +98,8 @@ const ServicesPage: FC = () => {
             </p>
           </div>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=Uj9rSaILKAM"
+            url="https://www.youtube.com/watch?v=u31qwQUeGuM&pp=ygURcGxhY2Vob2xkZXIgdmlkZW8%3D"
             controls={true}
-            width={557}
-            height={378}
           />
         </div>
       </div>

@@ -1,11 +1,11 @@
 .menuSection {
     max-width: 1115px;
-    display: flex;
-    flex-flow: column wrap;
-    row-gap: 29px;
-    column-gap: 43px;
-    margin-top: 41px;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0px 20px;
 }
 
 .letterSection {
@@ -28,30 +28,25 @@
     flex-direction: column;
 }
 
-@media (max-width: 1058px) {
+@media (max-width: 870px) {
     .menuSection{
-        height: 826px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 23px;
+        width: max-content;
+        margin-bottom: 200px;
     }
     .letterSection{
-        width: 196px;
+        max-width: 295px;
     }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 622px) {
     .menuSection{
-        height: 975px;
+        display: block;
+        height: max-content !important;
+        margin-bottom: 0px;
     }
     .letterSection{
-        width: 196px;
-    }
-}
-
-@media (max-width: 461px) {
-    .menuSection{
-        height: max-content;
-        flex-wrap: nowrap;
-    }
-    .letterSection{
-        width: 100%;
+        margin-bottom: 30px !important;
     }
 }
