@@ -2,10 +2,9 @@
     max-width: 1115px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 0px;
+    grid-row-gap: 0;
     grid-column-gap: 20px;
-    align-items: center;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .letterSection {
@@ -44,7 +43,7 @@
     .menuSection{
         display: block;
         height: max-content !important;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     .letterSection{
         margin-bottom: 30px !important;

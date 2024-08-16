@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useCallback, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { MakeAppointmentBtn } from "../../components/make-appointment-btn/MakeAppointmentBtn";
 import { MenuSection } from "../../components/menu-section/MenuSection";
@@ -12,6 +12,14 @@ import styles from "./servicesPage.module.css";
 import ReactPlayer from "react-player";
 
 const ServicesPage: FC = () => {
+  const [height, setHeight] = useState<number>(0);
+
+  const measuredRef = useCallback((node) => {
+    if (node !== null) {
+      setHeight(node.getBoundingClientRect().height);
+    }
+  }, []);
+
   const smallScreen = useMediaQuery("(max-width: 1167px)");
 
   return (
@@ -79,7 +87,7 @@ const ServicesPage: FC = () => {
           Наша лаборатория
         </h2>
         <div className={styles.ourLaboratoryMainContent}>
-          <div className={styles.ourLaboratoryTextContainer}>
+          <div className={styles.ourLaboratoryTextContainer} ref={measuredRef}>
             <h3>
               Сеть многопрофильных медицинских центров ДНК располагает
               собственной лабораторией.
@@ -93,13 +101,15 @@ const ServicesPage: FC = () => {
               строгий контроль качества.
             </p>
             <p>
-              Подробную иноформацию о техническом оснащении и работе лаборотарии
-              вы можете посмотреть на странице Лабараторно-диагностический центр
+              Подробную информацию о техническом оснащении и работе лаборатории
+              вы можете посмотреть на странице Лабораторно-диагностический центр
             </p>
           </div>
           <ReactPlayer
             url="https://www.youtube.com/watch?v=u31qwQUeGuM&pp=ygURcGxhY2Vob2xkZXIgdmlkZW8%3D"
             controls={true}
+            width={557}
+            height={smallScreen ? 300 : height}
           />
         </div>
       </div>
