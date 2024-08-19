@@ -21,7 +21,6 @@ const ServicesPage: FC = () => {
   }, []);
 
   const smallScreen = useMediaQuery("(max-width: 1167px)");
-  const mobileScreen = useMediaQuery("(max-width: 536px)");
 
   return (
     <>
