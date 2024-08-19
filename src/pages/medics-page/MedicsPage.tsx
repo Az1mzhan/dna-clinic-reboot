@@ -38,8 +38,10 @@ const MedicsPage: FC = () => {
 
   return (
     <div className={styles.medicsPage}>
-      <h1 className={styles.title}>Наши врачи</h1>
-      <h2 className={styles.titledesc}>Наши врачи - наша гордость!</h2>
+      <h1 className={styles.title}>Врачи и специалисты</h1>
+      <h2 className={styles.titledesc}>
+        Все что делает врач, пусть делает правильно и красиво.
+      </h2>
       <Box className={styles.medicsForm} component={Paper}>
         <div className={styles.formInput}>
           <TextField

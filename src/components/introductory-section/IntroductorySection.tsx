@@ -11,12 +11,10 @@ export const IntroductorySection: FC = () => {
         <Box className={styles.mainContent}>
           <Box className={styles.textContainer}>
             <p className={styles.slogan}>
-              Позаботьтесь о здоровье всей семьи с самого начала жизни и на
-              протяжении всего пути!
+              Следите за здоровьем с "ДНК", забота о себе и близких превыше
+              всего!
             </p>
-            <p className={styles.title}>
-              Лучшая частная клиника в городе Актау
-            </p>
+            <p className={styles.title}>Частная клиника №1 в Актау</p>
           </Box>
           <MakeAppointmentBtn introductory={true} />
         </Box>

@@ -21,13 +21,14 @@ const ServicesPage: FC = () => {
   }, []);
 
   const smallScreen = useMediaQuery("(max-width: 1167px)");
+  const mobileScreen = useMediaQuery("(max-width: 536px)");
 
   return (
     <>
       <div className={styles.container + " gradientBg"}>
-        <h1 className={styles.containerTitle}>Наши услуги</h1>
+        <h1 className={styles.containerTitle}>Анализы</h1>
         <h2 className={styles.containerSubtitle}>
-          Наши услуги надежные и точные.
+          Наши анализы надежные и точные.
         </h2>
         <div className={styles.miniCardsContainer}>
           {defaultAnalysesMiniCards.map((card, id) => (
@@ -47,27 +48,29 @@ const ServicesPage: FC = () => {
           ))}
         </div>
         <div className={styles.analysesActionCardsContainer}>
-          {defaultAnalysesActionCards.map((card, id) => (
-            <div className={styles.analysisActionCard} key={id}>
-              <h2 className={styles.analysisActionCardTitle}>{card.title}</h2>
-              <div className={styles.analysisActionCardMainContent}>
-                <div>
-                  <h4 className={styles.analysisActionCardSubtitle}>
-                    {card.subtitle}
-                  </h4>
-                  <button className={styles.analysisActionDetailsBtn}>
-                    Подробнее
-                  </button>
+          {defaultAnalysesActionCards
+            .filter((card) => card.title !== "Калькулятор анализов")
+            .map((card, id) => (
+              <div className={styles.analysisActionCard} key={id}>
+                <h2 className={styles.analysisActionCardTitle}>{card.title}</h2>
+                <div className={styles.analysisActionCardMainContent}>
+                  <div>
+                    <h4 className={styles.analysisActionCardSubtitle}>
+                      {card.subtitle}
+                    </h4>
+                    <button className={styles.analysisActionDetailsBtn}>
+                      Подробнее
+                    </button>
+                  </div>
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    width={card.iconWidth}
+                    height={card.iconHeight}
+                  />
                 </div>
-                <img
-                  src={card.icon}
-                  alt={card.title}
-                  width={card.iconWidth}
-                  height={card.iconHeight}
-                />
               </div>
-            </div>
-          ))}
+            ))}
         </div>
         <MakeAppointmentBtn styleProps={{ margin: "69px 0 108px" }} />
       </div>
@@ -84,26 +87,15 @@ const ServicesPage: FC = () => {
       </div>
       <div className={styles.container + " gradientBg"}>
         <h2 className={styles.sectionTitle + " " + styles.ourLaboratoryTitle}>
-          Наша лаборатория
+          Лаборатория "ДНК"
         </h2>
         <div className={styles.ourLaboratoryMainContent}>
           <div className={styles.ourLaboratoryTextContainer} ref={measuredRef}>
             <h3>
-              Сеть многопрофильных медицинских центров ДНК располагает
-              собственной лабораторией.
+              Многопрофильный медицинский центр ДНК оснащен
+              высококвалифицированной лабораторией, с минимальным процентом
+              оплошности выявления результатов за кратчайший срок.
             </h3>
-            <p>
-              Высокоточное оборудование последнего поколения, используемое в
-              нашей лаборатории, позволяет проводить исследования в
-              автоматическом режиме и в кратчайшие сроки, что сводит к минимуму
-              вероятность ошибок, обусловленных «человеческим фактором». На всех
-              этапах клинических лабораторных исследований осуществляется
-              строгий контроль качества.
-            </p>
-            <p>
-              Подробную информацию о техническом оснащении и работе лаборатории
-              вы можете посмотреть на странице Лабораторно-диагностический центр
-            </p>
           </div>
           <ReactPlayer
             url="https://www.youtube.com/watch?v=u31qwQUeGuM&pp=ygURcGxhY2Vob2xkZXIgdmlkZW8%3D"
@@ -115,7 +107,7 @@ const ServicesPage: FC = () => {
       </div>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle + " " + styles.popularAnalysesTitle}>
-          Популярные анализы
+          Часто используемые анализы
         </h2>
         <div className={styles.groupsContainer}>
           {defaultAnalysesGroups.map((group, id) => (
